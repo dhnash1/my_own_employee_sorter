@@ -17,6 +17,15 @@ function getInputName(){
   console.log(employeeName);
   window.employeeName = employeeName;
 }
+//Four digit
+function fourDigit(x){
+  for(var i = 0; i < employees.length; i++){
+    if(x[ i ][ 1 ].length < 5){
+      var leNum = leNum + .05
+    }
+  }
+}
+
 //Show the emloyee array.
 function bonusDetermine(employeeName){
   for(var i = 0; i < employees.length; i++){
@@ -35,18 +44,24 @@ function bonusDetermine(employeeName){
       // If they have a rating of 3
         } else if ( employees[ i ][ 3 ] = 3 ){
         var percentage =  employees[ i ][ 2 ] * three;
+        var leNum = three
         console.log(three);
       //if they have a rating of 4
       } else if ( employees[ i ][ 3 ] = 4){
         var percentage =  employees[ i ][ 2 ] * four;
+        var leNum = four;
         console.log(four);
         // if they have a rating of 5
       }else if ( employees[ i ][ 3 ] = 5){
         var percentage =  employees[ i ][ 2 ] * five;
+        leNum = five;
         console.log(five);
       }
-
+    window.percentage = percentage;
+    window.leNum = leNum;
+    console.log(leNum);
     console.log(percentage);
+
   }
 }
 }
