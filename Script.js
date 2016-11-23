@@ -21,9 +21,23 @@ function getInputName(){
 function bonusDetermine(employeeName){
   for(var i = 0; i < employees.length; i++){
       if(employeeName == employees[ i ][0]){
+// Math goes here
           alert( employees[i][0] + " found. Fetching Info");
-          console.log( employees[ i ]);
+          console.log( employees[ i ][ 3 ]);
+      // if they have a rating of 2 or less
+        if( employees[ i ][ 3 ] <= 2){
+          alert(employees[i][0] + " gets no bonus!");
+      // If they have a rating of 3
+        } else if ( employees[ i ][ 3 ] = 3 ){
+        var percentage =  employees[ i ][ 2 ] * .04;
+      //if they have a rating of 4
+      } else if ( employees[ i ][ 3 ] = 4){
+        var percentage =  employees[ i ][ 2 ] * .06;
+        // if they have a rating of 5
+      }else if ( employees[ i ][ 3 ] = 5){
+        var percentage =  employees[ i ][ 2 ] * .1;
       }
-
+    console.log(percentage);
   }
+}
 }
