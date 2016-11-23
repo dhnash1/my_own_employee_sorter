@@ -4,6 +4,9 @@ var boo = ["Boo", "11435", "54000", 3];
 var scout = ["Scout", "6243", "74750", 5];
 var robert = ["Robert", "26835", "66000", 1];
 var mayella = ["Mayella", "89068", "35000", 2];
+
+var bonuses = [];
+
 var employeeName = "Boo";
 var employees = [atticus, jem, boo, scout, robert, mayella];
 function getInputName(){
@@ -13,12 +16,23 @@ function getInputName(){
   window.employeeName = employeeName;
 }
 
+function addName(){
+
+
+
+
+}
+
+
+
+
 function bonusDetermine(employeeName){
 
   for(var i = 0; i < employees.length; i++){
       if(employeeName == employees[ i ][0]){
 
           alert( employees[i][0] + " found. Fetching Info");
+          console.log( employees[ i ]);
 
       }
 
