@@ -24,19 +24,28 @@ function bonusDetermine(employeeName){
 // Math goes here
           alert( employees[i][0] + " found. Fetching Info");
           console.log( employees[ i ][ 3 ]);
+          var two = 0
+          var three = .04
+          var four = .06
+          var five = .1
       // if they have a rating of 2 or less
         if( employees[ i ][ 3 ] <= 2){
           alert(employees[i][0] + " gets no bonus!");
+          console.log(two);
       // If they have a rating of 3
         } else if ( employees[ i ][ 3 ] = 3 ){
-        var percentage =  employees[ i ][ 2 ] * .04;
+        var percentage =  employees[ i ][ 2 ] * three;
+        console.log(three);
       //if they have a rating of 4
       } else if ( employees[ i ][ 3 ] = 4){
-        var percentage =  employees[ i ][ 2 ] * .06;
+        var percentage =  employees[ i ][ 2 ] * four;
+        console.log(four);
         // if they have a rating of 5
       }else if ( employees[ i ][ 3 ] = 5){
-        var percentage =  employees[ i ][ 2 ] * .1;
+        var percentage =  employees[ i ][ 2 ] * five;
+        console.log(five);
       }
+
     console.log(percentage);
   }
 }
